@@ -3,47 +3,47 @@
     <div class="field regist-tab">
         <h3>账户注册</h3>
     </div>
-    <form method="post" th:action="@{/mall/register}">
-    <div class="field">
-        <div class="fieldLabel">
-            <span class="required">*</span>
-            <span class="leftText">手机：</span>
+    <form class="mall-registerForm" method="post" th:action="@{/mall/register}">
+        <div class="field">
+            <div class="fieldLabel">
+                <span class="required">*</span>
+                <span class="leftText">手机：</span>
+            </div>
+            <div class="fieldContainer">
+                <input type="text" name="username" placeholder="请输入您的手机号码">
+            </div>
         </div>
-        <div class="fieldContainer">
-            <input type="text" name="username" placeholder="请输入您的手机号码">
-        </div>
-    </div>
-    <!--<div class="field">-->
-        <!--<div class="fieldLabel">-->
-            <!--<span class="required">*</span>-->
-            <!--<span class="leftText">短信验证码：</span>-->
+        <!--<div class="field">-->
+            <!--<div class="fieldLabel">-->
+                <!--<span class="required">*</span>-->
+                <!--<span class="leftText">短信验证码：</span>-->
+            <!--</div>-->
+            <!--<div class="fieldContainer">-->
+                <!--<input class="msgInput" type="text" name="">-->
+                <!--<input class="msgBtn" type="button" name="" value="免费获取短信验证码">-->
+            <!--</div>-->
         <!--</div>-->
-        <!--<div class="fieldContainer">-->
-            <!--<input class="msgInput" type="text" name="">-->
-            <!--<input class="msgBtn" type="button" name="" value="免费获取短信验证码">-->
-        <!--</div>-->
-    <!--</div>-->
-    <div class="field">
-        <div class="fieldLabel">
-            <span class="required">*</span>
-            <span class="leftText">密码：</span>
+        <div class="field">
+            <div class="fieldLabel">
+                <span class="required">*</span>
+                <span class="leftText">密码：</span>
+            </div>
+            <div class="fieldContainer">
+                <input type="text" name="oldPassword" placeholder="请设置您的密码">
+            </div>
         </div>
-        <div class="fieldContainer">
-            <input type="text" name="oldPassword" placeholder="请设置您的密码">
+        <div class="field">
+            <div class="fieldLabel">
+                <span class="required">*</span>
+                <span class="leftText">确认密码：</span>
+            </div>
+            <div class="fieldContainer">
+                <input type="text" name="password" placeholder="请再次输入您的密码">
+            </div>
         </div>
-    </div>
-    <div class="field">
-        <div class="fieldLabel">
-            <span class="required">*</span>
-            <span class="leftText">确认密码：</span>
+        <div class="field regist-btn">
+            <button type="submit" class="btn btn-default btn-regist">提交注册信息</button>
         </div>
-        <div class="fieldContainer">
-            <input type="text" name="password" placeholder="请再次输入您的密码">
-        </div>
-    </div>
-    <div class="field regist-btn">
-        <button type="submit" class="btn btn-default btn-regist">提交注册信息</button>
-    </div>
     </form>
 </div>
 <!--/预览视图-->

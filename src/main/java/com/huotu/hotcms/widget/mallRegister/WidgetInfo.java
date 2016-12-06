@@ -46,7 +46,7 @@ public class WidgetInfo implements Widget,PreProcessWidget{
     @Override
     public String name(Locale locale) {
         if (locale.equals(Locale.CHINA)) {
-            return "A custom Widget";
+            return "商城用户注册";
         }
         return "mallRegister";
     }
@@ -54,9 +54,9 @@ public class WidgetInfo implements Widget,PreProcessWidget{
     @Override
     public String description(Locale locale) {
         if (locale.equals(Locale.CHINA)) {
-            return "这是一个 A custom Widget，你可以对组件进行自定义修改。";
+            return "商城用户注册控件，拖拽到布局后即可。";
         }
-        return "This is a mallRegister,  you can make custom change the component.";
+        return "Mall user registration control, drag to the layout can be.";
     }
 
     @Override

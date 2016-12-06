@@ -39,9 +39,9 @@ public class DefaultWidgetStyle implements WidgetStyle{
     @Override
     public String description(Locale locale) {
         if (locale.equals(Locale.CHINA)) {
-            return "基于bootstrap样式的风格";
+            return "简单的注册控件，仅需要输入用户名和密码";
         }
-        return "Based on the bootstrap style by mallRegister";
+        return "Simple registration control, only need to enter the user name and password";
     }
 
     @Override
